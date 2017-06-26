@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DanTetris
 {
-    class Piece_I : Piece
+    sealed class Piece_I : Piece
     {
         public Piece_I(GameView gView) : base(Config.PIECE_I_ID, gView)
         {
