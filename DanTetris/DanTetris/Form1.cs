@@ -93,7 +93,7 @@ namespace DanTetris
 
             myTimer.Tick += new EventHandler(TimerEventProcessor);
             myTimer.Interval = 500;
-            myTimer.Start();
+            //myTimer.Start();
 
             piece = new Piece_O(board);
         }
@@ -123,6 +123,18 @@ namespace DanTetris
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            myTimer.Start();
+            button1.Enabled = false;
+            button2.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Move left a piece ---> Left arrow key\nMove right a piece ---> Right arrow key\nDrop a piece ---> Down arrow key\nRotate a piece ---> Enter key");
         }
     }
 }
