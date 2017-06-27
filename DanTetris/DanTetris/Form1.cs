@@ -114,7 +114,7 @@ namespace DanTetris
                     // Perform drop of the piece.
                     piece.drop(myTimer);
                     break;
-                case Keys.Enter:
+                case Keys.Space:
                     // Perform rotation.
                     piece.rotate();
                     break;
@@ -134,7 +134,7 @@ namespace DanTetris
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Move left a piece ---> Left arrow key\nMove right a piece ---> Right arrow key\nDrop a piece ---> Down arrow key\nRotate a piece ---> Enter key");
+            MessageBox.Show("Move left a piece ---> Left arrow key\nMove right a piece ---> Right arrow key\nDrop a piece ---> Down arrow key\nRotate a piece ---> Space key");
         }
     }
 }
